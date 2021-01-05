@@ -17,7 +17,7 @@ est_ci_str <- function(est, lcb, ucb, d = 2, cid = d) {
     est <- formatC(est, digits = d, format = 'f')
     lcb <- formatC(lcb, digits = cid, format = 'f')
     ucb <- formatC(ucb, digits = cid, format = 'f')
-
+  
     return(paste0(est, " (", lcb, ", ", ucb, ")"))
 }
 
