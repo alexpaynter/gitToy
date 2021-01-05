@@ -20,3 +20,8 @@ est_ci_str <- function(est, lcb, ucb, d = 2, cid = d) {
 
     return(paste0(est, " (", lcb, ", ", ucb, ")"))
 }
+
+string_pval <- function(pval, digits = 2) {
+    pval <- formatC(pval, digits = 2, format = 'f')
+    return(pval)
+}
